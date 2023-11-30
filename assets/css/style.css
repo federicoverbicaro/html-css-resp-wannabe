@@ -130,7 +130,7 @@ img {
  ************************************************/
 
 
-/* media query  768px */
+/* media query  768 */
 
 @media screen and (max-width: 768px) {
 
@@ -174,4 +174,84 @@ img {
     h2{
         font-size: 40px;
     }
+    h3{
+        font-size: 35px;
+    }
+    p{
+        font-size: 30px;
+    }
 }
+
+/* media query  480 */
+@media screen and (max-width: 480px){
+   
+    .container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap:80px;
+        align-items: center;
+    }
+    .steps {
+        padding: 0 20px;
+        background-color: #eebbc3;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .why-us{
+        background-color: black;
+        opacity: 1;
+    }
+    .why-us .col-right{
+        width:80%;
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        width: 100%;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+      .col {
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .lessons .col {
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .steps .col {
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .col .card img{
+       height: 25em;
+       margin-bottom: 1em;
+    }
+    .site-header>h1 {
+        text-align: center;
+        font-size: 5em;
+    }
+   
+    .container h2{
+        margin-top: 30px;
+        font-size: 4em;
+    }
+    h3.title{
+        font-size: 4em;
+    }
+    p{
+        font-size: 3em;
+    }
+   
+} 
