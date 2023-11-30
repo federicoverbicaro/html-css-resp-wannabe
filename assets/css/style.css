@@ -135,7 +135,7 @@ img {
 @media screen and (max-width: 768px) {
 
     .site-header {
-        width: 1140px;
+        width: 72em;
         margin-top: 3em;
     }
 
@@ -145,113 +145,161 @@ img {
     }
 
     .lessons {
-        width: 1140px;
+        width: 72em;
         margin: 0 auto;
     }
 
     .container {
-        width: 1140px;
         margin: 0 auto;
-        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .lessons .col img {
+        height: 20em;
+        margin-bottom: 1rem;
     }
 
     .steps {
-        width: 1140px;
-        margin: 0 auto;
-        padding: 0 20px;
+        width: 72em;
         background-color: #eebbc3;
         margin-top: 40px;
-    }
-
-    .why-us {
-        width: 1140px;
-        margin: 0 auto;
     }
 
     .container>h2 {
         padding-top: 30px;
     }
-    h2{
+
+    h2 {
         font-size: 40px;
     }
-    h3{
+
+    h3 {
         font-size: 35px;
     }
-    p{
+
+    p {
         font-size: 30px;
     }
 }
 
 /* media query  480 */
-@media screen and (max-width: 480px){
-   
-    .container{
+@media screen and (max-width: 480px) {
+
+    .container {
         display: flex;
         flex-direction: column;
 
     }
+
     .row {
         display: flex;
         flex-direction: column;
-        gap:80px;
+        gap: 80px;
         align-items: center;
     }
+
     .steps {
         padding: 0 20px;
         background-color: #eebbc3;
         margin-top: 40px;
         display: flex;
         justify-content: center;
+        margin-bottom: 0;
     }
-    .why-us{
+
+    .why-us {
+        justify-content: center;
         background-color: black;
         opacity: 1;
+        display: flex;
+        width: 72em;
+        margin-bottom: 0;
     }
-    .why-us .col-right{
-        width:80%;
+
+    .why-us .col-right {
+        width: 80%;
         display: flex;
         justify-content: center;
     }
-    .card{
+
+    .card {
         width: 100%;
         width: 800px;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
-      .col {
-        width:100%;
+
+    .col {
+        width: 100%;
         display: flex;
         justify-content: center;
     }
+
     .lessons .col {
-        width:100%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
+
     .steps .col {
-        width:100%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
-    .col .card img{
-       height: 25em;
-       margin-bottom: 1em;
+
+    .col .card img {
+        height: 25em;
+        margin-bottom: 1em;
     }
+
     .site-header>h1 {
         text-align: center;
         font-size: 5em;
     }
-   
-    .container h2{
+
+    .container h2 {
         margin-top: 30px;
         font-size: 4em;
     }
-    h3.title{
+
+    h3.title {
         font-size: 4em;
     }
-    p{
+
+    p {
         font-size: 3em;
     }
-   
-} 
+
+}
+
+/* media query da 768 a 1160 */
+
+@media screen and (min-width:768px) and (max-width:1160px){
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .conteiner{
+        width: 100%;
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+    
+    .site-header {
+        margin-top: 3em;
+    }
+
+    .site-header > h1 {
+        text-align: center;
+        font-size: 60px;
+        margin: 0 auto;
+    width: 18em;
+    }
+}
